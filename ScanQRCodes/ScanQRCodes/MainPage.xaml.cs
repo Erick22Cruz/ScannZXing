@@ -31,5 +31,10 @@ namespace ScanQRCodes
                 }
             };
         }
+
+        private void buttonScan_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -2,13 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ScanQRCodes"
-             x:Class="ScanQRCodes.MainPage">
+             x:Class="ScanQRCodes.MainPage" 
+             BackgroundColor="#302E2D">
 
-    <Button Text="Escanear Codigo" 
-            x:Name="buttonScan" 
-            BackgroundColor="#147896" 
+    <StackLayout 
+        VerticalOptions="FillAndExpand" 
+        HorizontalOptions="FillAndExpand" BackgroundColor="White">
+        <Button x:Name="buttonScan" 
+            Clicked="buttonScan_Clicked"
+            Text="Escanear Código" 
+            BackgroundColor="#FF5252" 
             TextColor="White" 
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"/>
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"/>
+
+        <Label x:Name="Resultado"
+           Text="Resultado"
+           FontAttributes="Bold"
+           TextColor="White"
+           FontSize="25"
+           HorizontalTextAlignment="Center"/>
+    </StackLayout>
 
 </ContentPage>

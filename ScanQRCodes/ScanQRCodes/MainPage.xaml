@@ -4,8 +4,11 @@
              xmlns:local="clr-namespace:ScanQRCodes"
              x:Class="ScanQRCodes.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <Button Text="Escanear Codigo" 
+            x:Name="buttonScan" 
+            BackgroundColor="#147896" 
+            TextColor="White" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
 
 </ContentPage>
